@@ -1,0 +1,51 @@
+<html>
+    
+    <head>
+    <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>BUS?</title>
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+        
+    </head>
+    <body>
+    
+        <div id="main-background" onclick="closeMenu();"></div>
+        
+        <div id="main-button" onclick="openMenu();">BUS?</div>
+        
+        <h1 id="taxi-label">zakas?
+            nazovi taksi!</h1>
+        <a id="taxi-button" href="tel:080001018"></a>
+    
+        <ul id="main-menu">
+            <li><h1 class="menu-elements" id="1">1</h1></li>
+            <li><h1 class="menu-elements" id="2">2</h1></li>
+            <li><h1 class="menu-elements" id="3">3</h1></li>
+            <li><h1 class="menu-elements" id="4">4</h1></li>
+            <li><h1 class="menu-elements" id="5">5</h1></li>
+            <li><h1 class="menu-elements" id="6">6</h1></li>
+            <li><h1 class="menu-elements" id="7">7</h1></li>
+            <li><h1 class="menu-elements" id="8">8</h1></li>
+            <li><h1 class="menu-elements" id="9">9</h1></li>
+            <li><h1 class="menu-elements" id="10">10</h1></li>
+            <li><h1 class="menu-elements" id="11">11</h1></li>
+            <li><h1 class="menu-elements" id="12">12</h1></li>
+            <li><h1 class="menu-elements" id="13">13</h1></li>
+            <li><h1 class="menu-elements" id="34">34</h1></li>
+            <li><h1 class="menu-elements" id="36">36</h1></li>
+        </ul>
+        
+        <div id="element-container">
+            <div class="container" id="container-1"><div class="slide-button" id="slide-button-right" onclick="swipeLeft()"></div></div>
+            <div class="container" id="container-2"><div class="slide-button" id="slide-button-left" onclick="swipeRight()"></div></div>
+        </div>
+        
+    </body>
+    
+    <script src="swiped-events.js"></script>
+    <script src="js.js"></script>
+    
+    
+</html>
+

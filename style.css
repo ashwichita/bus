@@ -1,0 +1,204 @@
+*{
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+   
+}
+
+#main-background{
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    background: #283044;
+    z-index: 0;
+}
+
+#main-button{
+    user-select: none;
+    margin: auto;
+    top: 50%;
+    transform: translateY(-50%);
+    position: relative;
+    width: 50vw;
+    height: 12vh;
+    background: #78A1BB;   
+    overflow: hidden;
+    color: #283044;
+    text-align: center;
+    vertical-align: middle;
+    font-family: 'Russo One', sans-serif;
+    font-size: 50px;
+    line-height: 12vh;
+    transition: background .5s ease-out!important;
+    z-index: 1;
+}
+
+#main-button:hover{
+    background: #283044;    
+    color: #78A1BB;
+    transition: .5s ease-out!important;
+    border: #78A1BB 7px solid;
+    cursor: pointer;
+}
+
+#main-menu{
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 75vw;
+    height: 0vh;
+    text-decoration: none;
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: 25vw 25vw 25vw;
+    grid-template-rows: 18vh 18vh 18vh 18vh 18vh;
+    grid-gap: 0px 0px;
+    z-index: 2;
+}
+
+#main-menu li{
+    color: #283044;
+    font-size: 1.6rem;
+    font-family: 'Russo One', sans-serif;
+    width: 25vw;
+    height: 18vh;
+    
+}
+
+#main-menu li h1:hover{
+    background: #283044;
+    color: #78A1BB;
+    transition: background .2s ease-out, color .3s ease-in;
+}
+
+#main-menu li h1{
+    user-select: none;
+    cursor: pointer;
+    background: #78A1BB;
+    color: #283044;
+    line-height: 18vh;
+    width: 25vw;
+    text-align: center;
+    transition: background .2s ease-out, color .1s ease-in;
+    
+}
+
+#element-container{
+    z-index : 4;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100vw;
+    height: 0vh;
+    background: #78A1BB;
+    opacity: 0;
+    cursor: pointer;
+    display: grid;
+    grid-template-rows: 50vh;
+    grid-auto-flow: column;
+    grid-gap: 0;
+    overflow: hidden;
+}
+
+.container{
+    width: 100vw;
+    height: 90vh;
+}
+
+#container-1{
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#container-2{
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.slide-button{
+    width: 30px;
+    height: 30px;
+    position: relative;
+    top: 50%;
+    transform: rotate(-45deg);
+    border:  solid #283044;
+    display: inline-block;
+    padding: 10px;
+    z-index: 6;
+    transition: .2s;
+    display: none;
+}
+
+@media (min-width: 1025px){
+    .slide-button{
+        display: block;
+    }
+}
+
+.slide-button:hover{
+    border:  solid #38425d;
+    padding: 14px;
+    transition: .2s;
+}
+
+#slide-button-right{
+    left: 85%;
+    border-width: 0px 10px 10px 0px;
+}
+
+#slide-button-left{
+    left: 5%;
+    border-width: 10px 0px 0px 10px;
+}
+
+#taxi-label{
+    position: absolute;
+    bottom: 12vh;
+    margin: auto;
+    height: 10vh;
+    color: #78A1BB;
+    line-height: 5vh;
+    text-align: center;
+    font-family: 'Russo One', sans-serif;
+    font-weight: 100;
+    font-size: 1.3rem;
+    opacity: 1;
+    
+    
+}
+
+#taxi-button{
+    position: absolute;
+    bottom: 5vh;
+    margin: auto;
+    height: 10vh;
+    background-image: url(media/PHONE.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 1;
+    transition: .3s ease-out;
+    animation: wiggle .8s infinite;
+}
+
+@keyframes wiggle{
+    0% { transform: rotate(0deg); }
+   80% { transform: rotate(0deg); }
+   85% { transform: rotate(7deg); }
+   95% { transform: rotate(-7deg); }
+  100% { transform: rotate(0deg); }
+}
+
+
+
+#taxi-button:hover{
+    height: 12vh;
+    transition: .3s ease-out;
+    animation: none;
+}
